@@ -2,24 +2,36 @@
     background-color: #222222;
     color: @gray-color;
     .footer-content{
-        padding-top:58px ;
+        padding-top:43px ;
         margin-bottom: 14px;
+        .about{
+            .col(calc(100%/12*3));
+        }
+        .location{
+            .col(calc(100%/12*3));
+        }
+        .menu{
+            .col(calc(100%/12*6));
+            padding-left: 9.6%;
+            
+        }
         .titile{
             .font-Montserrat(400,16px);
             color: #fff;
-        }
-        hr{
-            width: 80%;
-            height: 1px;
-            border: 1px;
-            background-color: #403f3f;
-            margin-left: 0;
+            border-bottom: 1px solid #403f3f;
+            padding-bottom: 26px;
+            max-width: 360px;
+            letter-spacing: 1px;
         }
         .content{
-            padding-top: 10px;
-            color: @gray-color;
+            padding-top: 23px;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            line-height: 22px;
+            color: #888888;
+            font-family: 'Open_Sans';
             ul li{
-                padding-bottom: 10px;
+                padding-bottom: 9px;
                 a{
                     color: @gray-color;
                     &.active{
@@ -29,7 +41,9 @@
                 }
             }
             .address{
+               a{
                 display: flex;
+               }
                 .text{
                     padding-left: 10px;
                     line-height: 30px;
@@ -51,28 +65,40 @@
                 }
             }
             .menu-left{
-                padding-left: 5vw;
+                .col(50%);
+                max-width: 196px;
+                margin: 0;
+               
+            }
+            .menu-right{
+                .col(50%);
+                max-width: 196px;
+                margin: 0;
             }
             
         }
         .social{
-            padding-top: 48px;
+            padding-top: 44px;
             span{
-                padding-right: 30px;
+                padding-right: 28px;
             }
         }
     }
-    hr{
-        background-color: #403f3f;
-        border: 1px;
-        height: 1px;
+    a{
+        color:#888888;
+        &:hover{
+            color: #fff !important;
+            text-decoration: underline;
+        }
     }
     .footer-bottom{
         padding-bottom: 25px;
+        border-top: 1px solid #403f3f;
         .content{
+            padding-top: 24px;
             .flex();
             .right{
-                font-size: 22px;
+                font-size: 23px;
             }
             .left{
                 .fa-heart{
