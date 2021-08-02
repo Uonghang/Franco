@@ -1,0 +1,111 @@
+.img100{
+    width:100%;
+}
+.header{
+    
+    font-size: 14px;
+    .header-top{
+        background-color: @header-bg-color;
+        height: 45px;
+        color:@gray-color;
+        padding: 0 30px;
+        font-family: @font-Open_Sans;
+        .flex();
+            .top-left{
+                .icon{
+                    font-size: 12px;
+                    .content-left{
+                        padding-left: 5px;
+                    }
+                }
+            }
+            .top-right{
+                .flex();
+                .install{
+                    margin-right: 30px;
+                    .icon{
+                        font-size: 12px;
+                    }
+                    .content-right{
+                        padding-left: 5px;
+                    }
+                }
+                .login{
+                    .icon{
+                        font-size: 12px;
+                    }
+                    .content-right{
+                        padding-left: 5px;
+                    }
+                }
+            } 
+    }
+    
+    .header-bottom{
+        height: 80px;
+        padding: 17px 30px;
+        .flex();
+        
+        .logo{  .font-Montserrat(700,20px);
+                width: 200px;
+                height: 40px;
+                border: 2px solid #000;
+                line-height: 40px;
+                padding: 0 15px;
+                letter-spacing: 15px;
+        }
+        .menu{
+            .nav{
+                margin-right: 55px;
+                .flex();
+                .font-Montserrat(700,14px);
+                .nav-item{
+                    padding-right: 57px;
+                    .nav-link{
+                        padding: 0;
+                    }
+                }
+               
+            }
+          
+        }
+        .bt-icon{
+            display: flex;
+            font-size: 25px;
+           span{
+            padding-left: 23px;
+           }
+           .icon-menu{
+               display: none;
+               &:hover{
+                   .banner{
+                       .menu-doc{
+                           display: block;
+                       }
+                   }
+               }
+           }
+           
+        }
+    }
+   
+}
+@media screen and (max-width:1200px) {
+       .header{
+        .header-bottom{
+            .menu{
+                display: none;
+            }
+            .bt-icon{
+               .icon-menu{
+                   display: block;
+               }
+               
+            }
+            
+        }
+       } 
+}
+
+
+
